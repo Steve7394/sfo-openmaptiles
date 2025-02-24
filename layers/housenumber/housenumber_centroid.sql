@@ -86,14 +86,12 @@ CREATE TRIGGER trigger_store
     AFTER INSERT OR UPDATE
     ON osm_housenumber_point
     FOR EACH ROW
-    WHEN (pg_trigger_depth() < 1)
 EXECUTE PROCEDURE housenumber.store();
 
 CREATE TRIGGER trigger_flag
     AFTER INSERT OR UPDATE
     ON osm_housenumber_point
     FOR EACH STATEMENT
-    WHEN (pg_trigger_depth() < 1)
 EXECUTE PROCEDURE housenumber.flag();
 
 CREATE CONSTRAINT TRIGGER trigger_refresh
