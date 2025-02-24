@@ -17,6 +17,10 @@
   "data": {
     "openmaptiles": {
       "mbtiles": "/data/tiles.mbtiles"
+    },
+    "terrain": {
+      "mbtiles": "/data/terrain.mbtiles",
+      "format": "png"
     }
   }
 }
