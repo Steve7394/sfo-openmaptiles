@@ -697,17 +697,17 @@ test-sql: clean refresh-docker-images destroy-db start-db-nowait build/import-te
 		awk -v s="ERROR:" '1{print; fflush()} $$0~s{print "*** ERROR detected, aborting"; exit(1)}'
 
 SRTM_DIR=sfo/srtmprovider
-TIF=sfo/terrain.tif
+TIF=sfo/terrain
 MBTILES_FILE=data/terrain.mbtiles
 
 generate-dem-layer:
 	mkdir -p $(SRTM_DIR)/unzipped &&\
 	unzip -o "$(SRTM_DIR)/*.zip" -d $(SRTM_DIR)/unzipped &&\
-	docker run --rm -v $(shell pwd)/sfo:/sfo ghcr.io/osgeo/gdal:ubuntu-small-latest sh -c " \
-	gdal_merge.py -o $(TIF) -of GTiff -a_nodata 0 $(SRTM_DIR)/unzipped/*.hgt &&\
-    gdal_fillnodata.py -md 10 -b 1 $(TIF) $(TIF) &&\
-    gdal_edit.py -unsetnodata $(TIF)" &&\
-	docker run --rm -v $(shell pwd)/sfo:/sfo helmi03/rio-rgbify -b -43 -i 0.1 /$(TIF) /$(TIF) 
-	docker run --rm -v $(shell pwd)/sfo:/sfo -v $(shell pwd)/data:/data ghcr.io/osgeo/gdal:ubuntu-small-latest sh -c " \
-	gdal_translate -of MBTILES -co TILE_FORMAT=PNG $(TIF) $(MBTILES_FILE) && \
+	docker run --rm -v $(shell pwd)/sfo:/sfo ghcr.io/osgeo/gdal:ubuntu-small-latest sh -c ' \
+	gdal_merge.py -o $(TIF).tif -of GTiff -a_nodata 0 $(SRTM_DIR)/unzipped/*.hgt &&\
+    gdal_fillnodata.py -md 10 -b 1 $(TIF).tif $(TIF).tif &&\
+    gdal_edit.py -unsetnodata $(TIF).tif' &&\
+	docker run --rm -v $(shell pwd)/sfo:/sfo helmi03/rio-rgbify -b -100 -i 0.1 /$(TIF).tif /$(TIF).tif &&\
+	docker run --rm -v $(shell pwd)/sfo:/sfo -v $(shell pwd)/data:/data ghcr.io/osgeo/gdal:ubuntu-small-latest sh -c "\
+	gdal_translate -of MBTILES -co TILE_FORMAT=PNG $(TIF).tif $(MBTILES_FILE) &&\
 	gdaladdo -r bilinear $(MBTILES_FILE)  2 4 8 16 32 64"
