@@ -20,3 +20,9 @@ cache/*
 # any IDE files
 .idea/
 .vscode/
+*.hgt.zip
+*.hgt
+*.tif
+*.tiff
+*.geotiff
+*.geotif
