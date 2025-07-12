@@ -8,7 +8,7 @@
 7- use command "make import-sql"
 8- use command "make generate-tiles-pg"
 
-9- download iran hgt files from "https://srtm.kurviger.de/SRTM3/Eurasia/index.html" N25-N44 and E39-E44
+9- download iran hgt files from "https://srtm.kurviger.de/SRTM3/Eurasia/index.html"  N25-N44 and E39-E44
     you can get this files from graphhopper project if you enable elevation
     it is uploaded in repo.sepahtan.net (http://repo.sepahtan.net/repository/gis-data/)
 10- put downloaded file in .sfo/srtmprovider
@@ -18,6 +18,6 @@
 
 // if tiles are generated, start from this step
 
-12- build and run dockerfile, like  "docker build -t my-tileserver ." and then  "docker run -p 8080:8080 my-tileserver"
-13- the style file, sprites, fonts where served by my-tileserver
-14- use style in maplibre client like test.html file
+12- cd sfo directory and run "docker compose up -d"
+13- the style file, sprites, fonts where served by tileserver
+14- open test.html file in sfo directory with browser
