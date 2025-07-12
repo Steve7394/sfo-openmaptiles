@@ -39,18 +39,6 @@
       },
       "metadata": {},
       "order": 19
-    },
-    {
-      "id": "hills",
-      "type": "hillshade",
-      "source": "terrain",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "hillshade-shadow-color": "#928f79"
-      },
-      "order": 20
     }
   ]
 }
