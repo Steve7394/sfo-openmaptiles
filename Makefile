@@ -698,7 +698,7 @@ test-sql: clean refresh-docker-images destroy-db start-db-nowait build/import-te
 
 SRTM_DIR=sfo/srtmprovider
 TIF=sfo/terrain
-MBTILES_FILE=data/terrain.mbtiles
+TERRAIN_MBTILES_FILE=data/terrain.mbtiles
 
 generate-dem-layer:
 	mkdir -p $(SRTM_DIR)/unzipped &&\
@@ -709,5 +709,5 @@ generate-dem-layer:
     gdal_edit.py -unsetnodata $(TIF).tif' &&\
 	docker run --rm -v $(shell pwd)/sfo:/sfo helmi03/rio-rgbify -b -100 -i 0.1 /$(TIF).tif /$(TIF).tif &&\
 	docker run --rm -v $(shell pwd)/sfo:/sfo -v $(shell pwd)/data:/data ghcr.io/osgeo/gdal:ubuntu-small-latest sh -c "\
-	gdal_translate -of MBTILES -co TILE_FORMAT=PNG $(TIF).tif $(MBTILES_FILE) &&\
-	gdaladdo -r bilinear $(MBTILES_FILE)  2 4 8 16 32 64"
+	gdal_translate -of MBTILES -co TILE_FORMAT=PNG $(TIF).tif $(TERRAIN_MBTILES_FILE) &&\
+	gdaladdo -r bilinear $(TERRAIN_MBTILES_FILE)  2 4 8 16 32 64"
