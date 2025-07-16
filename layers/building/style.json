@@ -39,6 +39,26 @@
       },
       "metadata": {},
       "order": 19
+    },
+    {
+      "id": "3d-buildings",
+      "source": "openmaptiles",
+      "source-layer": "building",
+      "type": "fill-extrusion",
+      "minzoom": 15,
+      "maxzoom": 24,
+      "paint": {
+        "fill-extrusion-color": [
+          "coalesce",
+          ["get", "colour"],
+          "#c4bfbb"
+        ],
+        "fill-extrusion-height": ["get", "render_height"],
+        "fill-extrusion-base": ["get", "render_min_height"],
+        "fill-extrusion-opacity": 0.8
+      },
+      "metadata": {},
+      "order": 20
     }
   ]
 }
