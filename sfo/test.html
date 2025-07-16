@@ -33,6 +33,17 @@
                 source: "terrain",
                 exaggeration: 2.5
             });
+            map.addLayer({
+                "id": "hills",
+                "type": "hillshade",
+                "source": "terrain",
+                "layout": {
+                    "visibility": "visible"
+                },
+                "paint": {
+                    "hillshade-shadow-color": "#928f79"
+                }
+            }, "landuse_residential");
         });
         map.addControl(
             new maplibregl.TerrainControl({
