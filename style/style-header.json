@@ -36,6 +36,17 @@
       "paint": {
         "background-color": "#f2efe9"
       }
+    },
+    {
+      "id": "hills",
+      "type": "hillshade",
+      "source": "terrain",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "hillshade-shadow-color": "#928f79"
+      }
     }
   ]
 }
