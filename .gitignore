@@ -9,13 +9,13 @@ quickstart.log
 
 
 # imput / output data
-data/*
+data/
 
 # generated source files
-build/*
+build/
 
 # Import cache
-cache/*
+cache/
 
 # any IDE files
 .idea/
@@ -26,3 +26,4 @@ cache/*
 *.tiff
 *.geotiff
 *.geotif
+*.iml
