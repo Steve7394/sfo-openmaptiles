@@ -50,15 +50,24 @@
       "paint": {
         "fill-extrusion-color": [
           "coalesce",
-          ["get", "colour"],
+          [
+            "get",
+            "colour"
+          ],
           "#c4bfbb"
         ],
-        "fill-extrusion-height": ["get", "render_height"],
-        "fill-extrusion-base": ["get", "render_min_height"],
+        "fill-extrusion-height": [
+          "get",
+          "render_height"
+        ],
+        "fill-extrusion-base": [
+          "get",
+          "render_min_height"
+        ],
         "fill-extrusion-opacity": 0.8
       },
       "metadata": {},
-      "order": 20
+      "order": 21
     }
   ]
 }

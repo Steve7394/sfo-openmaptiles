@@ -12,7 +12,7 @@
           "Noto Sans Bold"
         ],
         "text-size": 12,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-max-width": 5,
         "symbol-placement": "line"
@@ -31,7 +31,7 @@
           "LineString"
         ]
       ],
-      "order": 152
+      "order": 153
     },
     {
       "id": "water_name_point",
@@ -45,7 +45,7 @@
           "Noto Sans Regular"
         ],
         "text-size": 11,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-max-width": 5
       },
@@ -68,7 +68,7 @@
           "ocean"
         ]
       ],
-      "order": 153
+      "order": 154
     }
   ]
 }

@@ -53,7 +53,7 @@
             "shop"
           ]
         ],
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -98,7 +98,7 @@
           "gallery"
         ]
       ],
-      "order": 155
+      "order": 156
     },
     {
       "id": "poi_shop-z15",
@@ -135,7 +135,7 @@
             "subclass"
           ]
         ],
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -165,7 +165,7 @@
           "supermarket"
         ]
       ],
-      "order": 156
+      "order": 157
     },
     {
       "id": "poi_waste",
@@ -190,7 +190,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -223,7 +223,7 @@
           "toilets"
         ]
       ],
-      "order": 157
+      "order": 158
     },
     {
       "id": "poi_cemetery",
@@ -237,7 +237,7 @@
           "Noto Sans Regular"
         ],
         "text-size": 11,
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "icon-anchor": "bottom",
         "icon-offset": [
@@ -279,7 +279,7 @@
           "cemetery"
         ]
       ],
-      "order": 158
+      "order": 159
     },
     {
       "id": "poi_school",
@@ -295,7 +295,7 @@
         ],
         "text-size": 11,
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "icon-anchor": "bottom",
         "icon-offset": [
@@ -338,7 +338,7 @@
           "school"
         ]
       ],
-      "order": 159
+      "order": 160
     },
     {
       "id": "poi_outdoor",
@@ -363,7 +363,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -393,7 +393,7 @@
           "gate"
         ]
       ],
-      "order": 160
+      "order": 161
     },
     {
       "id": "poi_parking",
@@ -426,7 +426,7 @@
             ],
             [
               16,
-              "{name:latin}\n{name:nonlatin}"
+              "{name:nonlatin}"
             ]
           ]
         },
@@ -459,7 +459,7 @@
           "parking"
         ]
       ],
-      "order": 161
+      "order": 162
     },
     {
       "id": "poi_golf",
@@ -484,7 +484,7 @@
           ]
         },
         "icon-image": "golf",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -514,7 +514,7 @@
           "golf"
         ]
       ],
-      "order": 162
+      "order": 163
     },
     {
       "id": "poi_sport",
@@ -539,7 +539,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -570,7 +570,7 @@
           "water_park"
         ]
       ],
-      "order": 163
+      "order": 164
     },
     {
       "id": "poi_ferry",
@@ -595,7 +595,7 @@
           ]
         },
         "icon-image": "ferry",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -630,7 +630,7 @@
           "ferry_terminal"
         ]
       ],
-      "order": 164
+      "order": 165
     },
     {
       "id": "poi_food",
@@ -655,7 +655,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -690,7 +690,7 @@
           "restaurant"
         ]
       ],
-      "order": 165
+      "order": 166
     },
     {
       "id": "poi_water",
@@ -715,7 +715,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -745,7 +745,7 @@
           "ice_rink"
         ]
       ],
-      "order": 166
+      "order": 167
     },
     {
       "id": "poi_public",
@@ -790,7 +790,7 @@
             ""
           ]
         ],
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -833,7 +833,7 @@
           "books"
         ]
       ],
-      "order": 167
+      "order": 168
     },
     {
       "id": "poi_cultural",
@@ -858,7 +858,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -899,7 +899,7 @@
           "art"
         ]
       ],
-      "order": 168
+      "order": 169
     },
     {
       "id": "poi_attraction",
@@ -924,7 +924,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -954,7 +954,7 @@
           "attraction"
         ]
       ],
-      "order": 169
+      "order": 170
     },
     {
       "id": "poi_car",
@@ -987,7 +987,7 @@
             ],
             [
               16,
-              "{name:latin}\n{name:nonlatin}"
+              "{name:nonlatin}"
             ]
           ]
         },
@@ -1024,7 +1024,7 @@
           "charging_station"
         ]
       ],
-      "order": 170
+      "order": 171
     },
     {
       "id": "poi_health",
@@ -1050,7 +1050,7 @@
           ]
         },
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -1082,7 +1082,7 @@
           "veterinary"
         ]
       ],
-      "order": 171
+      "order": 172
     },
     {
       "id": "poi_hospital",
@@ -1115,7 +1115,7 @@
             ],
             [
               16,
-              "{name:latin}\n{name:nonlatin}"
+              "{name:nonlatin}"
             ]
           ]
         },
@@ -1148,7 +1148,7 @@
           "hospital"
         ]
       ],
-      "order": 172
+      "order": 173
     },
     {
       "id": "poi_campsite",
@@ -1173,7 +1173,7 @@
           ]
         },
         "icon-image": "camping",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -1203,7 +1203,7 @@
           "campsite"
         ]
       ],
-      "order": 173
+      "order": 174
     },
     {
       "id": "poi_accommodation",
@@ -1236,7 +1236,7 @@
             ],
             [
               18,
-              "{name:latin}\n{name:nonlatin}"
+              "{name:nonlatin}"
             ]
           ]
         },
@@ -1270,7 +1270,7 @@
           "campsite"
         ]
       ],
-      "order": 174
+      "order": 175
     },
     {
       "id": "poi_place_of_worship",
@@ -1304,7 +1304,7 @@
             ],
             [
               16,
-              "{name:latin}\n{name:nonlatin}"
+              "{name:nonlatin}"
             ]
           ]
         },
@@ -1334,7 +1334,7 @@
           "place_of_worship"
         ]
       ],
-      "order": 175
+      "order": 176
     },
     {
       "id": "poi_busstop",
@@ -1360,7 +1360,7 @@
           ]
         },
         "icon-image": "bus_stop.12",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "icon-anchor": "bottom",
         "text-anchor": "top",
@@ -1395,7 +1395,7 @@
           "bus"
         ]
       ],
-      "order": 176
+      "order": 177
     },
     {
       "id": "poi_bus",
@@ -1411,7 +1411,7 @@
         ],
         "text-size": 11,
         "icon-image": "{subclass}",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "icon-anchor": "bottom",
         "icon-offset": [
@@ -1455,7 +1455,7 @@
           "bus_stop"
         ]
       ],
-      "order": 177
+      "order": 178
     },
     {
       "id": "poi_harbor",
@@ -1479,7 +1479,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-padding": 2,
@@ -1505,7 +1505,7 @@
           "harbor"
         ]
       ],
-      "order": 178
+      "order": 179
     },
     {
       "id": "poi_mall",
@@ -1529,7 +1529,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "text-anchor": "top",
         "text-offset": [
@@ -1564,7 +1564,7 @@
           "mall"
         ]
       ],
-      "order": 179
+      "order": 180
     },
     {
       "id": "poi_train",
@@ -1580,7 +1580,7 @@
         ],
         "text-size": 11,
         "icon-image": "square_train",
-        "text-field": "{name:latin}\n{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "icon-anchor": "bottom",
         "icon-offset": [
@@ -1623,7 +1623,7 @@
           "railway"
         ]
       ],
-      "order": 180
+      "order": 181
     },
     {
       "id": "park-local",
@@ -1647,7 +1647,7 @@
             ]
           ]
         },
-        "text-field": "{name:latin}{name:nonlatin}",
+        "text-field": "{name:nonlatin}",
         "visibility": "visible",
         "symbol-spacing": 150,
         "text-max-width": {
@@ -1683,7 +1683,7 @@
           "park"
         ]
       ],
-      "order": 194
+      "order": 195
     },
     {
       "id": "poi_zoo",
@@ -1743,7 +1743,7 @@
           "zoo"
         ]
       ],
-      "order": 196
+      "order": 197
     }
   ]
 }
